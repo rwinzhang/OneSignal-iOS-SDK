@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.requires_arc = true
   
-  s.ios.vendored_frameworks = 'iOS_SDK/OneSignalSDK/Framework/OneSignal.framework'
-  s.framework               = 'SystemConfiguration', 'UIKit', 'UserNotifications'
+  s.source_files     = "iOS_SDK/*.{h,m}", "iOS_SDK/OneSignal/*.{h,m}", "iOS_SDK/OneSignalJailbreakDettection/*.{h,m}", "iOS_SDK/OneSignalMobileProvision/*.{h,m}", "iOS_SDK/OneSignalReachability/*.{h,m}"
 end
